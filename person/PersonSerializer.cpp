@@ -96,7 +96,7 @@ std::size_t record_count(const char* block) {
 }
 
 std::optional<std::size_t> first_free_slot(const char* block) {
-    if (block == nullptr) {
+    if (block == nullptr) { 
         return std::nullopt;
     }
     for (std::size_t i = 0; i < kRecordsPerBlock; ++i) {
