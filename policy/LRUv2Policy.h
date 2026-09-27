@@ -23,12 +23,12 @@ namespace bufman {
 // across insertions and erasures that do not touch its own element.
 class LRUv2Policy final : public ReplacementPolicy {
 public:
-    void init(std::size_t pool_size) override;
-    void on_access(std::size_t frame) override;
-    void on_load(std::size_t frame) override;
-    void on_remove(std::size_t frame) override;
-    std::optional<std::size_t> pick_victim(
-        const std::vector<std::size_t>& candidates) const override;
+        void init(std::size_t pool_size) override;
+        void on_access(std::size_t frame) override;
+        void on_load(std::size_t frame) override;
+        void on_remove(std::size_t frame) override;
+        std::optional<std::size_t> pick_victim(
+            const std::vector<std::size_t>& candidates) const override;
 
 private:
     void touch(std::size_t frame);
