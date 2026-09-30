@@ -9,8 +9,7 @@ add_library(dbcore STATIC
     person/PersonSerializer.cpp
     person/PersonCsv.cpp
     person/PersonGenerator.cpp
-    part/PartSerializer.cpp
-    part/PartCsv.cpp
+        part/PartCsv.cpp
     part/PartGenerator.cpp
     policy/FIFOPolicy.cpp
     policy/LFUPolicy.cpp
@@ -20,10 +19,17 @@ add_library(dbcore STATIC
     policy/PolicyFactory.cpp
     bufpool/BufferPool.cpp
     bufpool/BufferManager.cpp
+        part/PartCsv.cpp
+        part/PartCsv.cpp
+        part/PartCsv.cpp
+        part/PartCsv.cpp
+        part/PartGenerator.cpp
+        part/PartSerializer.cpp
 )
 target_include_directories(dbcore PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
-add_executable(p1stdbeng main.cpp)
+add_executable(p1stdbeng main.cpp
+        part/PartCsv.cpp)
 target_link_libraries(p1stdbeng PRIVATE dbcore)
 
 add_executable(p1stdbeng_demo p1db.cpp)

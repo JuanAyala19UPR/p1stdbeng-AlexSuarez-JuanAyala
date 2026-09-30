@@ -29,7 +29,7 @@ bool parse_line(const std::string& line, Person& person, std::string& error) {
         !std::getline(input, age_text, ',') ||
         !std::getline(input, city, ',') ||
         std::getline(input, extra, ',')) {
-        error = "expected exactly four comma-separated fields";
+        error = "e  xpected exactly four comma-separated fields";
         return false;
     }
 
