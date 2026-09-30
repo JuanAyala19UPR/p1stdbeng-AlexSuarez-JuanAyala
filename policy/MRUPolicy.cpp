@@ -3,6 +3,8 @@
 //
 #include "MRUPolicy.h"
 
+#include <algorithm>
+
 namespace bufman {
 
 void MRUPolicy::init(std::size_t pool_size) {
@@ -38,9 +40,7 @@ std::optional<std::size_t> MRUPolicy::pick_victim(
         const std::vector<std::size_t>& candidates) const {
 
     for (auto it = order_.begin(); it != order_.end(); ++it) {
-        if (std::find(candidates.begin(),
-                      candidates.end(),
-                      *it) != candidates.end()) {
+        if (std::find(candidates.begin(),candidates.end(),*it) != candidates.end()) {
             return *it;
         }
     }

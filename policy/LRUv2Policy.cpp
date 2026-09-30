@@ -3,7 +3,9 @@
 //
 #include "LRUv2Policy.h"
 
-    namespace bufman {
+#include <algorithm>
+
+namespace bufman {
 
         void LRUv2Policy::init(std::size_t pool_size) {
         order_.clear();

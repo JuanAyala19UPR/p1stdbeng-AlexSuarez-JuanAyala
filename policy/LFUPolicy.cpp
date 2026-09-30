@@ -70,11 +70,29 @@ namespace bufman {
             return std::nullopt;
         }
 
-        auto slot_menor=slots_.find(*candidates.begin());
-        auto cantidad_menor=slot_menor->second.count;
+        //auto slot_menor=slots_.find(*candidates.begin());
+        //auto cantidad_menor=slot_menor->second.count;
         //auto frequence_menor=buckets_.find(cantidad_menor)->first;
         //auto selected_candidate=*candidates.begin();
+        bool finder_slot=false;
+        std::size_t cantidad_menor=0;
+
         for (std::size_t i=0;i<candidates.size();i++) {
+            auto slot=slots_.find(candidates[i]);
+            if (slot==slots_.end()) {
+                continue;
+            }
+            auto cantidad=slot->second.count;
+            if (!finder_slot ||cantidad<cantidad_menor) {
+                cantidad_menor=cantidad;
+                finder_slot=true;
+            }
+        }
+        if (!finder_slot) {
+            return std::nullopt;
+        }
+
+        /*for (std::size_t i=0;i<candidates.size();i++) {
             //Get frequence of each candidate and compare with frequence menor
             auto slot=slots_.find(candidates[i]);
             auto cantidad=slot->second.count;
@@ -84,6 +102,7 @@ namespace bufman {
                 //selected_candidate=candidates[i];
             }
         }
+        */
         auto bucket=buckets_.find(cantidad_menor);
         //std::vector<size_t>  selected_candidates;
         //bucket->second.erase(selected_candidate);

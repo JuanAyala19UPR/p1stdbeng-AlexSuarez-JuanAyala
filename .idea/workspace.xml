@@ -31,6 +31,8 @@
     <list default="true" id="af866dce-4f8a-499a-ac8b-57f8711b19f8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/policy/LFUPolicy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/policy/LFUPolicy.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/policy/LRUv2Policy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/policy/LRUv2Policy.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/policy/MRUPolicy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/policy/MRUPolicy.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +79,7 @@
     "cidr.known.project.marker": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "ctest.advertisement.all.test.configuration.is.created": "true",
-    "git-widget-placeholder": "policies__alex",
+    "git-widget-placeholder": "test",
     "last_opened_file_path": "/home/alex/Documents/GitHub/p1stdbeng",
     "nodejs_package_manager_path": "npm",
     "python.packages.toolwindow.project.migrated.to.right.top.v2": "true"
@@ -147,5 +149,15 @@
     <isAutomaticFoundErrors value="true" />
     <isAutomaticReloadCMake value="true" />
     <isAutomaticBootstrapAfterUpdate value="false" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/policy/MRUPolicy.cpp</url>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
