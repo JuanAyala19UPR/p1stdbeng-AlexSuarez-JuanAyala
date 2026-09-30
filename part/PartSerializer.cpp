@@ -135,7 +135,7 @@ bool get_part_record(const char* block, std::size_t slot, Part& part) {
 }
 
 bool put_part_record(char* block, std::size_t slot, const Part& part) {
-    if (block!=nullptr || slot>=kPartsPerBlock || part.part_id==0) {
+    if (block==nullptr || slot>=kPartsPerBlock || part.part_id==0) {
         return false;
     }
     serialize_part(part,block+slot*kPartRecordSize,kPartsPerBlock);

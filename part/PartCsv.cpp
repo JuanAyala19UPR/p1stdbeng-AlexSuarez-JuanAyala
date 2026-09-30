@@ -46,7 +46,7 @@ namespace bufman {
             !std::getline(input, color_text, ',') ||
             !std::getline(input, price_text, ',') ||
             !std::getline(input, material, ',') ||
-            !std::getline(input, extra, ','))
+            std::getline(input, extra, ','))
         {
             error = "e  xpected exactly six comma-separated fields";
             return false;

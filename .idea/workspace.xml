@@ -30,9 +30,8 @@
   <component name="ChangeListManager">
     <list default="true" id="af866dce-4f8a-499a-ac8b-57f8711b19f8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/policy/LFUPolicy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/policy/LFUPolicy.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/policy/LRUv2Policy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/policy/LRUv2Policy.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/policy/MRUPolicy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/policy/MRUPolicy.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part/PartCsv.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/part/PartCsv.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part/PartSerializer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/part/PartSerializer.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
