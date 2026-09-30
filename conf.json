@@ -1,0 +1,4 @@
+{
+  "policy": "lru",
+  "pool_size": 10
+}
