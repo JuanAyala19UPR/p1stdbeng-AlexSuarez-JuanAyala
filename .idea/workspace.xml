@@ -31,7 +31,6 @@
     <list default="true" id="af866dce-4f8a-499a-ac8b-57f8711b19f8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/policy/LFUPolicy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/policy/LFUPolicy.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/policy/LFUPolicy.h" beforeDir="false" afterPath="$PROJECT_DIR$/policy/LFUPolicy.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
